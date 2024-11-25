@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/icons8-pão-e-centeio.png" type="image/png">
+    <title>Pão e Prosa</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">
+            <img src="assets/icons8-pão-e-centeio.png" alt="logo da padaria">
+            <span>Pão e Prosa</span>
+        </a>
+        <nav>
+            <a href="#home" class="menu-links">Início</a>
+            <a href="#products" class="menu-links">Produtos</a>
+            <a href="#about" class="menu-links">História</a>
+            <a href="#contact" class="menu-links">Contatos</a>
+        </nav>
+
+        <div class="menu-mobile">
+            <button id="menuButton">☰</button>
+            <div class="menu-content" id="menuContent">
+                <a href="#home" class="menu-links">Início</a>
+                <a href="#products" class="menu-links">Produtos</a>
+                <a href="#about" class="menu-links">História</a>
+                <a href="#contact" class="menu-links">Contatos</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner" id="home">
+            <div class="slogan">
+                <h1>Seja 
+                    bem-vindo</h1>
+                <p>Descubra o sabor do pão artesanal!</p>
+                <button>Conheça nossos produtos</button>
+            </div>
+            <img src="assets/banner.jpg" alt="foto de produtos de padaria">
+        </section>
+
+        <section class="products" id="products">
+            <h2>Produtos</h2>
+            <div class="products-tags">
+                <button id="btnPaes">Pães</button>
+                <button id="btnBolos">Bolos</button>
+                <button id="btnDoces">Doces</button>
+            </div>
+            <div class="products-cards" id="productsContainer">
+                <div class="products-container" id="paes">
+                    <!-- Produtos gerados dinamicamente -->
+                </div>
+                <div class="products-container" id="bolos">
+                    <!-- Produtos gerados dinamicamente -->
+                </div>
+                <div class="products-container" id="doces">
+                    <!-- Produtos gerados dinamicamente -->
+                </div>
+                <button id="loadMore">Ver mais</button>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>História</h2>
+            <div class="about-content">
+                <p>Bem-vindo à Padaria Pão & Prosa, onde cada fornada conta uma história. Nossa jornada começou há mais de 15 anos, quando Dona Clara, apaixonada por pães e confeitaria, decidiu transformar sua cozinha em um lugar de encontros e aromas irresistíveis. Inspirada pelas receitas de sua avó, ela começou a criar pães artesanais e doces que logo conquistaram o bairro.</p>
+                <img src="assets/massa-artesanal.jpg" alt="Massa artesanal">
+            </div>
+            <div class="about-content reverse">
+                <p>Com o tempo, a paixão pela arte da panificação cresceu, e a pequena cozinha deu lugar à nossa padaria. Hoje, mantemos o compromisso de oferecer produtos frescos, feitos com ingredientes selecionados e muito carinho.</p>
+                <img src="assets/pao-trigo.jpg" alt="Pão de trigo">
+            </div>
+            <div class="about-content">
+                <p>Aqui, acreditamos que o pão é mais do que um alimento, é uma forma de unir pessoas. Seja no café da manhã, na pausa da tarde ou naquele jantar especial, queremos fazer parte dos seus momentos mais deliciosos.</p>
+                <img src="assets/salgados.jpg" alt="Salgados">
+            </div>
+            <div class="about-content">
+                <p>Venha nos visitar e sinta o aconchego de um ambiente onde o cheiro de pão quentinho e o sorriso de quem te atende tornam o dia mais leve. Afinal, na Pão & Prosa, a tradição e o sabor caminham de mãos dadas.</p>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <h2>Depoimentos</h2>
+            <div class="review-slide">
+                <button class="arrow left" id="prevReview">❮</button>
+                <div class="review-container" id="reviewContainer">
+                    <!-- Depoimentos gerados dinamicamente -->
+                </div>
+                <button class="arrow right" id="nextReview">❯</button>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <form action="" id="contactForm">
+                <h3>Entre em contato conosco!</h3>
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="tel" name="phone" placeholder="Telefone" required>
+                <textarea name="message" id="" placeholder="Mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Padaria Pão & Prosa - 2024</h3>
+            <div class="links">
+                <a href="#">
+                    <img src="https://img.icons8.com/?size=100&id=118484&format=png&color=000000" alt="facebook">
+                </a>
+                <a href="">
+                    <img src="https://img.icons8.com/?size=100&id=32320&format=png&color=000000" alt="instagram">
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3>Horário de funcionamento:</h3>
+            <p>Segunda a sexta: 6h às 20h</p>
+            <p>Sábado e domingo: 7h às 18h</p>
+        </div>
+        <div>
+            <p>Endereço: Rua dos Pães, 123 - Pãozinho Feliz</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: padaria@email.com</p>
+        </div>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
